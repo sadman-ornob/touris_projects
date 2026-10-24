@@ -1,0 +1,502 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+    /* ===== EKHANE APNAR BACKGROUND IMAGE URL BA PATH BOSABEN ===== */
+    /* Udahoron: url('hero-bg.jpg') ba kono online direct image link */
+    background-image: url('./touris_img/Rectangle\ 1\ 1.jpg'); 
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+
+/* Background Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.5) 100%);
+    z-index: 1;
+}
+
+/* Header & Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 8%;
+    z-index: 10;
+}
+
+.logo a {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.9;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    opacity: 1;
+    font-weight: 600;
+}
+
+/* Hero Text Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+.sub-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #e3a869;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.main-title {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.15;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Culture Section Style */
+.culture-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0b0b0b; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 8%;
+}
+
+.culture-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 80px;
+}
+
+/* Left Image Style */
+.culture-image {
+    flex: 1;
+}
+
+.culture-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Right Content Style */
+.culture-content {
+    flex: 1;
+    color: #ffffff;
+}
+
+.culture-sub-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #e3a869; 
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.culture-main-title {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.culture-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #b0b0b0; 
+    margin-bottom: 35px;
+    max-width: 500px;
+}
+
+.read-more-btn {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #e3a869;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+.read-more-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e3a869;
+    transition: width 0.3s ease;
+}
+
+.read-more-btn:hover {
+    color: #ffffff;
+}
+
+.read-more-btn:hover::after {
+    background-color: #ffffff;
+}
+
+/* Bromo Section Wrapper */
+
+.bromo-section {
+    width: 100%;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+/* Inner Box Container */
+.bromo-container {
+    position: relative; 
+    width: 90%;
+    max-width: 1320px;
+    height: 861px; /* Fixed Height */
+    background-image: url('./touris_img/other\ section.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 40px 20px;
+}
+
+
+.bromo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Content Box (Centered) */
+.bromo-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    max-width: 850px;
+    margin-bottom: 200px;
+    padding-bottom: 200px;
+}
+
+.bromo-sub-title {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #e3a869;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.bromo-main-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.bromo-desc {
+    font-size: 11.5px;
+    line-height: 1.9;
+    letter-spacing: 0.8px;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* Bottom Button Container */
+.bromo-btn-wrapper {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.bromo-btn {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #e3a869;
+    padding-bottom: 4px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.bromo-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e3a869;
+    transition: background-color 0.3s ease;
+}
+
+.bromo-btn:hover {
+    color: #ffffff;
+}
+
+.bromo-btn:hover::after {
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+/* Explore Cards Section Style */
+.explore-section {
+    width: 100%;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 8%;
+}
+
+.explore-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Individual Card Style */
+.explore-card {
+    position: relative;
+    width: 320px;
+    height: 380px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Card Background Image */
+.card-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Hover-e Image subtle zoom hobe */
+.explore-card:hover .card-bg {
+    transform: scale(1.05);
+}
+
+/* Card Overlay Content */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65); /* Dark transparent background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    opacity: 0; /* Default-e hidden thakbe */
+    transition: opacity 0.4s ease;
+}
+
+
+.explore-card:hover .card-overlay {
+    opacity: 1; 
+}
+
+
+.card-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #e3a869; 
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.card-desc {
+    font-size: 11px;
+    line-height: 1.8;
+    color: #e0e0e0;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.card-btn {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #e3a869;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.card-btn:hover {
+    color: #ffffff;
+}
+
+/* Indonesian Culture Section Style */
+.indo-culture-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0b0b0b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 8%;
+}
+
+.indo-culture-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 80px;
+}
+
+/* Left Content Style */
+.indo-culture-content {
+    flex: 1;
+    color: #ffffff;
+}
+
+.indo-culture-sub-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #e3a869;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.indo-culture-main-title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.indo-culture-desc {
+    font-size: 12px;
+    line-height: 1.9;
+    letter-spacing: 0.8px;
+    color: #b0b0b0;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    max-width: 500px;
+}
+
+/* Right Image Style */
+.indo-culture-image {
+    flex: 1;
+}
+
+.indo-culture-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.hero-section,
+.culture-section,
+.indo-culture-section,
+.explore-section {
+    padding-left: 8%;
+    padding-right: 8%;
+}
