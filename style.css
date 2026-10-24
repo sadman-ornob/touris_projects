@@ -15,8 +15,7 @@ body {
     width: 100%;
     height: 100vh;
     
-    /* ===== EKHANE APNAR BACKGROUND IMAGE URL BA PATH BOSABEN ===== */
-    /* Udahoron: url('hero-bg.jpg') ba kono online direct image link */
+    
     background-image: url('./touris_img/Rectangle\ 1\ 1.jpg'); 
     
     background-size: cover;
@@ -216,7 +215,7 @@ body {
     position: relative; 
     width: 90%;
     max-width: 1320px;
-    height: 861px; /* Fixed Height */
+    height: 861px; 
     background-image: url('./touris_img/other\ section.png');
     background-size: cover;
     background-position: center;
@@ -499,4 +498,306 @@ body {
 .explore-section {
     padding-left: 8%;
     padding-right: 8%;
+}
+
+
+/* Footer Section Style */
+.footer-section {
+    width: 100%;
+    background-color: #050505;
+    color: #ffffff;
+    padding: 80px 8% 30px 8%;
+    border-top: 1px solid #1a1a1a;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Top Row */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.footer-logo {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-tagline {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+/* Social Icons */
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a {
+    color: #ffffff;
+    background-color: #1a1a1a;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background-color: #e3a869;
+    color: #050505;
+}
+
+/* Call To Action (Get Started) */
+.footer-cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-text {
+    font-size: 15px;
+    color: #b0b0b0;
+}
+
+.cta-btn {
+    background-color: #e3a869;
+    color: #050505;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.cta-btn:hover {
+    opacity: 0.9;
+}
+
+/* Footer Links Row */
+.footer-links-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 80px;
+    padding: 50px 0;
+}
+
+.footer-col {
+    min-width: 140px;
+}
+
+.col-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a,
+.terms-link {
+    font-size: 13px;
+    color: #999999;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover,
+.terms-link:hover {
+    color: #e3a869;
+}
+
+.terms-link {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* Footer Bottom Copyright */
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #1f1f1f;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #777777;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Styles */
+
+   1. TABLET & MEDIUM DEVICES (Max-width: 992px)
+   
+@media (max-width: 992px) {
+    /* Global Container Padding Adjustment */
+    .hero-section,
+    .culture-section,
+    .indo-culture-section,
+    .explore-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* Culture & Indo-Culture Split Sections (Column layout on tablet/mobile) */
+    .culture-container,
+    .indo-culture-container {
+        flex-direction: column-reverse;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .culture-content,
+    .indo-culture-content {
+        max-width: 100%;
+    }
+
+    .culture-desc,
+    .indo-culture-desc {
+        margin: 0 auto 30px auto;
+    }
+
+    /* Bromo Banner Section */
+    .bromo-container {
+        width: 95%;
+        height: 600px;
+    }
+
+    .bromo-main-title {
+        font-size: 32px;
+    }
+
+    .bromo-btn-wrapper {
+        bottom: 35px;
+    }
+
+    /* Explore 3-Cards Section */
+    .explore-container {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .explore-card {
+        width: 45%;
+        height: 340px;
+    }
+
+    /* Footer Section */
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-links-row {
+        justify-content: flex-start;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ==========================================
+   2. MOBILE PHONES (Max-width: 768px)
+   ================================---------- */
+@media (max-width: 768px) {
+    /* Typography & General Spacing */
+    .main-title,
+    .bromo-main-title,
+    .culture-main-title,
+    .indo-culture-main-title {
+        font-size: 26px !important;
+        line-height: 1.3;
+    }
+
+    /* Hero Section */
+    .hero-content {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    /* Bromo Banner Section */
+    .bromo-container {
+        width: 100%;
+        height: 500px;
+        border-radius: 0;
+    }
+
+    .bromo-desc {
+        font-size: 10.5px;
+        padding: 0 10px;
+    }
+
+    /* Explore 3-Cards Section (Stack single column) */
+    .explore-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .explore-card {
+        width: 100%;
+        max-width: 380px;
+        height: 320px;
+    }
+
+    /* Footer Section */
+    .footer-links-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+
+
+   3. SMALL MOBILE PHONES (Max-width: 576px)
+@media (max-width: 576px) {
+    .bromo-main-title {
+        font-size: 22px !important;
+    }
+
+    .bromo-desc {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .footer-logo {
+        font-size: 28px;
+    }
+
+    .footer-tagline {
+        font-size: 16px;
+    }
 }
