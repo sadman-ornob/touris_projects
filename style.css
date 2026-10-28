@@ -801,3 +801,70 @@ body {
         font-size: 16px;
     }
 }
+
+
+
+/* Navbar Responsive Fix (CSS Only) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Choto device-e niche neme asbe jate venge na jay */
+    padding: 15px 5%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 13px; /* Mobile-er jonno font size choto kora holo */
+    color: #cccccc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #e3a869;
+}
+
+/* Mobile & Tablet Media Query */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Mobile-e upore logo ebong niche menu thakbe */
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Text gulo space na pele niche line e chole jabe kintu venge jabe na */
+        gap: 15px 20px;
+    }
+
+    .nav-links li a {
+        font-size: 12.5px; /* Mobile screen e text er size perfect rakhar jonno */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 10px 15px;
+    }
+    
+    .nav-links li a {
+        font-size: 12px;
+    }
+}
