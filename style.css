@@ -374,14 +374,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.65); /* Dark transparent background */
+    background: rgba(0, 0, 0, 0.65); 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 25px;
-    opacity: 0; /* Default-e hidden thakbe */
+    opacity: 0; 
     transition: opacity 0.4s ease;
 }
 
@@ -667,7 +667,7 @@ body {
         padding-right: 5%;
     }
 
-    /* Culture & Indo-Culture Split Sections (Column layout on tablet/mobile) */
+    
     .culture-container,
     .indo-culture-container {
         flex-direction: column-reverse;
@@ -809,7 +809,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Choto device-e niche neme asbe jate venge na jay */
+    flex-wrap: wrap;
     padding: 15px 5%;
 }
 
@@ -848,15 +848,15 @@ body {
     }
 
     .logo {
-        font-size: 20px; /* Logo size choto kora holo */
+        font-size: 20px; 
     }
 
     .nav-links {
-        gap: 10px; /* Menu item gulor majher gap komiye dewa holo */
+        gap: 10px; 
     }
 
     .nav-links li a {
-        font-size: 11px; /* Font size choto korar fole seser item porjonto shobai easily dhore jabe */
+        font-size: 11px; 
     }
 }
 
