@@ -840,31 +840,36 @@ body {
 }
 
 /* Mobile & Tablet Media Query */
+/* Mobile responsive fix for Navbar */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Mobile-e upore logo ebong niche menu thakbe */
-        gap: 15px;
-        padding: 15px 20px;
+        padding: 15px 4px; /* Side padding komiye dewa holo jate shob jayga pawa jay */
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 20px; /* Logo size choto kora holo */
     }
 
     .nav-links {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap; /* Text gulo space na pele niche line e chole jabe kintu venge jabe na */
-        gap: 15px 20px;
+        gap: 10px; /* Menu item gulor majher gap komiye dewa holo */
     }
 
     .nav-links li a {
-        font-size: 12.5px; /* Mobile screen e text er size perfect rakhar jonno */
+        font-size: 11px; /* Font size choto korar fole seser item porjonto shobai easily dhore jabe */
     }
 }
 
 @media (max-width: 480px) {
-    .nav-links {
-        gap: 10px 15px;
+    .navbar {
+        padding: 12px 10px;
     }
     
+    .nav-links {
+        gap: 8px;
+    }
+
     .nav-links li a {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
